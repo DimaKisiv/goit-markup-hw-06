@@ -25,10 +25,18 @@
           </a>
           <ul class="navigation-menu">
             <li>
-              <a class="navigation-item active" href="./index.html">Studio</a>
+              <a
+                class="navigation-item active transition-color"
+                href="./index.html"
+                >Studio</a
+              >
             </li>
-            <li><a class="navigation-item" href="">Portfolio</a></li>
-            <li><a class="navigation-item" href="">Contacts</a></li>
+            <li>
+              <a class="navigation-item transition-color" href="">Portfolio</a>
+            </li>
+            <li>
+              <a class="navigation-item transition-color" href="">Contacts</a>
+            </li>
           </ul>
         </nav>
         <address class="address">
@@ -45,6 +53,78 @@
             </li>
           </ul>
         </address>
+        <div
+          onclick="document.getElementById('mobile-menu').classList.add('is-open')"
+          class="burger-button"
+        >
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </div>
+        <div id="mobile-menu" class="mobile-menu">
+          <button
+            onclick="document.getElementById('mobile-menu').classList.remove('is-open')"
+            class="modal-close mobile-close"
+            type="button"
+          >
+            <svg class="modal-close-svg" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="navigation-menu-mobile">
+            <li>
+              <a class="navigation-item-mobile active" href="./index.html"
+                >Studio</a
+              >
+            </li>
+            <li><a class="navigation-item-mobile" href="">Portfolio</a></li>
+            <li><a class="navigation-item-mobile" href="">Contacts</a></li>
+          </ul>
+          <address class="address address-mobile">
+            <ul class="address-menu-mobile">
+              <li class="address-menu-item">
+                <a class="address-item" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="address-menu-item">
+                <a class="address-item" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="footer-icons-container icons-mobile">
+            <li class="footer-icons-menu-item">
+              <a href="" class="footer-icon-social icon-social">
+                <svg class="social-icon-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-icons-menu-item">
+              <a href="" class="footer-icon-social icon-social">
+                <svg class="social-icon-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-icons-menu-item">
+              <a href="" class="footer-icon-social icon-social">
+                <svg class="social-icon-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-icons-menu-item">
+              <a href="" class="footer-icon-social icon-social">
+                <svg class="social-icon-svg" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -54,7 +134,13 @@
           <h1 class="top-banner-title">
             Effective Solutions for Your Business
           </h1>
-          <button class="top-banner-button" type="button">Order Service</button>
+          <button
+            onclick="document.getElementById('modal').classList.add('is-open')"
+            class="top-banner-button"
+            type="button"
+          >
+            Order Service
+          </button>
         </div>
       </section>
       <!--Our Values-->
@@ -297,8 +383,7 @@
             <li class="portfolio-first">
               <div class="image-overlay-wrapper">
                 <img
-                  width="360"
-                  height="300"
+                  class="portfolio-img"
                   src="./images/banking-app.jpg"
                   alt="Banking App"
                 />
@@ -316,8 +401,7 @@
             <li class="portfolio-first">
               <div class="image-overlay-wrapper">
                 <img
-                  width="360"
-                  height="300"
+                  class="portfolio-img"
                   src="./images/cashless-payment.jpg"
                   alt="Cashless Payment"
                 />
@@ -335,8 +419,7 @@
             <li class="portfolio-first">
               <div class="image-overlay-wrapper">
                 <img
-                  width="360"
-                  height="300"
+                  class="portfolio-img"
                   src="./images/meditation-app.jpg"
                   alt="Meditation App"
                 />
@@ -354,8 +437,7 @@
             <li class="portfolio-first">
               <div class="image-overlay-wrapper">
                 <img
-                  width="360"
-                  height="300"
+                  class="portfolio-img"
                   src="./images/taxi-service.jpg"
                   alt="Taxi Service"
                 />
@@ -373,8 +455,7 @@
             <li class="portfolio-first">
               <div class="image-overlay-wrapper">
                 <img
-                  width="360"
-                  height="300"
+                  class="portfolio-img"
                   src="./images/screen-illustrations.jpg"
                   alt="Screen Illustrations"
                 />
@@ -392,8 +473,7 @@
             <li class="portfolio-first">
               <div class="image-overlay-wrapper">
                 <img
-                  width="360"
-                  height="300"
+                  class="portfolio-img"
                   src="./images/online-courses.jpg"
                   alt="Online Courses"
                 />
@@ -477,9 +557,11 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay">
+    <div id="modal" class="modal-overlay">
       <div class="modal">
-        <button class="modal-close" type="button">
+        <button 
+        onclick="document.getElementById('modal').classList.remove('is-open')"
+        class="modal-close" type="button">
           <svg class="modal-close-svg" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
