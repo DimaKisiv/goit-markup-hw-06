@@ -209,6 +209,10 @@
                 width="264"
                 height="260"
                 src="./images/mark-guerrero.jpg"
+                srcset="
+                  ./images/mark-guerrero.jpg    1x,
+                  ./images/mark-guerrero@2x.jpg 2x
+                "
                 alt="Mark Guerrero"
               />
               <div class="team-card-text-container">
@@ -251,6 +255,7 @@
                 width="264"
                 height="260"
                 src="./images/tom-ford.jpg"
+                srcset="./images/tom-ford.jpg 1x, ./images/tom-ford@2x.jpg 2x"
                 alt="Tom Ford"
               />
               <div class="team-card-text-container">
@@ -293,8 +298,13 @@
                 width="264"
                 height="260"
                 src="./images/camila-garcia.jpg"
+                srcset="
+                  ./images/camila-garcia.jpg    1x,
+                  ./images/camila-garcia@2x.jpg 2x
+                "
                 alt="Camila Garcia"
               />
+
               <div class="team-card-text-container">
                 <h3 class="list-title">Camila Garcia</h3>
                 <p class="text">Marketing</p>
@@ -335,8 +345,13 @@
                 width="264"
                 height="260"
                 src="./images/daniel-wilson.jpg"
+                srcset="
+                  ./images/daniel-wilson.jpg 1x,
+                  ./images/daniel-wilson@2x.jpg 2x
+                "
                 alt="Daniel Wilson"
               />
+
               <div class="team-card-text-container">
                 <h3 class="list-title">Daniel Wilson</h3>
                 <p class="text">UI Designer</p>
@@ -385,6 +400,10 @@
                 <img
                   class="portfolio-img"
                   src="./images/banking-app.jpg"
+                  srcset="
+                    ./images/banking-app.jpg    1x,
+                    ./images/banking-app@2x.jpg 2x
+                  "
                   alt="Banking App"
                 />
                 <p class="overlay">
@@ -403,6 +422,10 @@
                 <img
                   class="portfolio-img"
                   src="./images/cashless-payment.jpg"
+                  srcset="
+                    ./images/cashless-payment.jpg    1x,
+                    ./images/cashless-payment@2x.jpg 2x
+                  "
                   alt="Cashless Payment"
                 />
                 <p class="overlay">
@@ -421,6 +444,10 @@
                 <img
                   class="portfolio-img"
                   src="./images/meditation-app.jpg"
+                  srcset="
+                    ./images/meditation-app.jpg    1x,
+                    ./images/meditation-app@2x.jpg 2x
+                  "
                   alt="Meditation App"
                 />
                 <p class="overlay">
@@ -439,6 +466,10 @@
                 <img
                   class="portfolio-img"
                   src="./images/taxi-service.jpg"
+                  srcset="
+                    ./images/taxi-service.jpg    1x,
+                    ./images/taxi-service@2x.jpg 2x
+                  "
                   alt="Taxi Service"
                 />
                 <p class="overlay">
@@ -457,6 +488,10 @@
                 <img
                   class="portfolio-img"
                   src="./images/screen-illustrations.jpg"
+                  srcset="
+                    ./images/screen-illustrations.jpg    1x,
+                    ./images/screen-illustrations@2x.jpg 2x
+                  "
                   alt="Screen Illustrations"
                 />
                 <p class="overlay">
@@ -475,6 +510,10 @@
                 <img
                   class="portfolio-img"
                   src="./images/online-courses.jpg"
+                  srcset="
+                    ./images/online-courses.jpg    1x,
+                    ./images/online-courses@2x.jpg 2x
+                  "
                   alt="Online Courses"
                 />
                 <p class="overlay">
@@ -559,9 +598,11 @@
     </footer>
     <div id="modal" class="modal-overlay">
       <div class="modal">
-        <button 
-        onclick="document.getElementById('modal').classList.remove('is-open')"
-        class="modal-close" type="button">
+        <button
+          onclick="document.getElementById('modal').classList.remove('is-open')"
+          class="modal-close"
+          type="button"
+        >
           <svg class="modal-close-svg" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -636,8 +677,10 @@
                   <use href="./images/icons.svg#icon-checkbox"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="modal-terms-link" href="">Privacy Policy</a>
+              <div class="modal-terms-text">
+                I accept the terms and conditions of the
+                <a class="modal-terms-link" href="">Privacy Policy</a>
+              </div>
             </label>
           </div>
           <button class="modal-button" type="submit">Send</button>
